@@ -1,0 +1,8 @@
+find_package(ZeroMQ REQUIRED)
+
+add_library(cppzmq INTERFACE)
+set_target_properties(cppzmq PROPERTIES
+                      INTERFACE_INCLUDE_DIRECTORIES
+                      "@CMAKE_CURRENT_SOURCE_DIR@/cppzmq;${ZeroMQ_INCLUDE_DIRS}"
+                      INTERFACE_LINK_LIBRARIES
+                      "${ZeroMQ_LIBRARIES}")

@@ -1,0 +1,8 @@
+[submodule "cppzmq"]
+	path = cppzmq
+	url = https://github.com/zeromq/cppzmq.git
+	branch = master
+[submodule "android/android-cmake"]
+	path = android/android-cmake
+	url = https://github.com/amezin/android-cmake.git
+	branch = find_fixes
